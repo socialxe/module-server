@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<grants>
+		<grant name="register" default="member">
+			<title xml:lang="ko">클라이언트 등록</title>
+			<title xml:lang="zh-TW">客戶端註冊</title>
+			<title xml:lang="en">Client register</title>
+		</grant>
+	</grants>
+	<permissions>
+		<permission action="dispSocialxeserverClientList" target="member" />
+		<permission action="dispSocialxeserverInsertClient" target="member" />
+		<permission action="dispSocialxeserverModifyClient" target="member" />
+		<permission action="procSocialxeserverInsertClient" target="member" />
+		<permission action="procSocialxeserverDeleteCheckedClient" target="member" />
+	</permissions>
+	<actions>
+		<action name="dispSocialxeserverAdminConfig" type="view" standalone="true" />
+		<action name="dispSocialxeserverAdminClient" type="view" admin_index="true" standalone="true" />
+		<action name="dispSocialxeserverAdminInsertClient" type="view" standalone="true" />
+		<action name="dispSocialxeserverAdminModifyClient" type="view" standalone="true" />
+		<action name="dispSocialxeserverAdminServiceConfig" type="view" standalone="true" />
+		<action name="dispSocialxeserverAdminServiceGrant" type="view" />
+
+		<action name="procSocialxeserverAdminInsertConfig" type="controller" standalone="true" />
+		<action name="procSocialxeserverAdminInsertClient" type="controller" standalone="true" />
+		<action name="procSocialxeserverAdminDeleteCheckedClient" type="controller" standalone="true" />
+		<action name="procSocialxeserverAdminInsertServiceModule" type="controller" standalone="true" />
+		<action name="procSocialxeserverAdminUpdateServiceModule" type="controller" standalone="true" />
+
+		<action name="dispSocialxeserverClientList" type="view" index="true" />
+		<action name="dispSocialxeserverInsertClient" type="view" />
+		<action name="dispSocialxeserverModifyClient" type="view" />
+
+		<action name="procSocialxeserverInsertClient" type="controller" />
+		<action name="procSocialxeserverDeleteCheckedClient" type="controller" />
+		<action name="procSocialxeserverAPI" type="controller" standalone="true" />
+		<action name="procSocialxeserverCallback" type="controller" standalone="true" />
+
+		<action name="dispSocialxeserverAdminGetYozmAccessToken" type="view" standalone="true" />
+		<action name="dispSocialxeserverAdminCallback" type="view" standalone="true" />
+	</actions>
+</module>

@@ -1,0 +1,10 @@
+<query id="insertVerifier" action="insert">
+	<tables>
+		<table name="socialxeserver_verifier" />
+	</tables>
+	<columns>
+		<column name="verifier" var="verifier" notnull="notnull" />
+		<column name="access_token" var="access_token" />
+		<column name="regdate" default="curdate()" />
+	</columns>
+</query>

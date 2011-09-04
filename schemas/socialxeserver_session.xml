@@ -1,0 +1,4 @@
+<table name="socialxeserver_session">
+	<column name="auto_login_key" type="varchar" size="32" notnull="notnull" primary_key="primary_key" />
+	<column name="session" type="text" notnull="notnull" />
+</table>

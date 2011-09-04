@@ -1,0 +1,5 @@
+<table name="socialxeserver_verifier">
+	<column name="verifier" type="varchar" size="64" notnull="notnull" primary_key="primary_key" />
+	<column name="access_token" type="text" notnull="notnull" />
+	<column name="regdate" type="date" />
+</table>

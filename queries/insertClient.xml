@@ -1,0 +1,11 @@
+<query id="insertClient" action="insert">
+	<tables>
+		<table name="socialxeserver_member" />
+	</tables>
+	<columns>
+		<column name="client_srl" var="client_srl" notnull="notnull" filter="number" />
+		<column name="client_token" var="client_token" notnull="notnull" />
+		<column name="domain" var="domain" />
+		<column name="member_srl" var="member_srl" />
+	</columns>
+</query>

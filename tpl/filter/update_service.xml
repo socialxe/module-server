@@ -1,0 +1,8 @@
+<filter name="update_service" module="socialxeserver" act="procSocialxeserverAdminUpdateServiceModule" confirm_msg_code="confirm_submit">
+	<form>
+		<node target="service_id" required="true" maxlength="40" filter="alpha_number" />
+		<node target="browser_title" required="true" maxlength="250" />
+	</form>
+	<parameter />
+	<response />
+</filter>

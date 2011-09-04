@@ -1,0 +1,9 @@
+<query id="deleteVerifier" action="delete">
+	<tables>
+		<table name="socialxeserver_verifier" />
+	</tables>
+	<conditions>
+		<condition operation="equal" column="verifier" var="verifier"  />
+		<condition operation="less" column="regdate" var="regdate"  />
+	</conditions>
+</query>

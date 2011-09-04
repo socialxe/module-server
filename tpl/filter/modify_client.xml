@@ -1,0 +1,7 @@
+<filter name="modify_client" module="socialxeserver" act="procSocialxeserverAdminInsertClient" confirm_msg_code="confirm_submit">
+	<form>
+		<node target="client_srl" required="true" />
+		<node target="domain_list" required="true" />
+	</form>
+	<response callback_func="completeInsertClient" />
+</filter>

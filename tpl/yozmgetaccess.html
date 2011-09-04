@@ -1,0 +1,12 @@
+<script type="text/javascript">
+	var access_token = '{$access_token[access][oauth_token]}';
+	var access_token_secret = '{$access_token[access][oauth_token_secret]}';
+
+	var access_token_obj = jQuery(opener.document).find("input[name='yozm_access_token']");
+	var access_token_secret_obj = jQuery(opener.document).find("input[name='yozm_access_token_secret']");
+
+	access_token_obj.val(access_token);
+	access_token_secret_obj.val(access_token_secret);
+
+	window.close();
+</script>

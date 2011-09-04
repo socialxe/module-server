@@ -1,0 +1,17 @@
+<!--%import("js/admin.js")-->
+
+<h3 class="xeAdmin">{$lang->socialxeserver} <span class="gray">{$lang->cmd_management}</span></h3>
+
+<div class="header4">
+	<ul class="localNavigation">
+		<li <!--@if($act=='dispSocialxeserverAdminClient')-->class="on"<!--@end-->><a href="{getUrl('act','dispSocialxeserverAdminClient')}">{$lang->cmd_client_list}</a></li>
+		<!--@if($act=='dispSocialxeserverAdminModifyClient')-->
+		<li class="on"><a href="#">{$lang->cmd_modify_client}</a></li>
+		<!--@end-->
+		<li <!--@if($act=='dispSocialxeserverAdminServiceConfig')-->class="on"<!--@end-->><a href="{getUrl('act', 'dispSocialxeserverAdminServiceConfig')}">{$lang->cmd_service_config}</a></li>
+		<!--@if($service_module_info)-->
+		<li <!--@if($act=='dispSocialxeserverAdminServiceGrant')-->class="on"<!--@end-->><a href="{getUrl('act', 'dispSocialxeserverAdminServiceGrant')}">{$lang->cmd_manage_grant}</a></li>
+		<!--@end-->
+		<li <!--@if($act=='dispSocialxeserverAdminConfig')-->class="on"<!--@end-->><a href="{getUrl('act','dispSocialxeserverAdminConfig')}">{$lang->cmd_setting}</a></li>
+	</ul>
+</div>

@@ -1,0 +1,5 @@
+<table name="socialxeserver_request">
+	<column name="client_srl" type="number" size="11" notnull="notnull" />
+	<column name="request_token" type="varchar" size="64" notnull="notnull" index="idx_request_token" />
+	<column name="regdate" type="date" notnull="notnull" />
+</table>

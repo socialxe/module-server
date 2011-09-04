@@ -1,0 +1,8 @@
+<query id="deleteClient" action="delete">
+	<tables>
+		<table name="socialxeserver_member" />
+	</tables>
+	<conditions>
+		<condition operation="in" column="client_srl" var="client_srls" notnull="notnull" />
+	</conditions>
+</query>

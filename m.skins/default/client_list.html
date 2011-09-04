@@ -1,0 +1,97 @@
+<!--#include("./header.html")-->
+
+<!--%import("filter/delete_checked.xml")-->
+
+<div class="socialxeserver">
+
+<style type="text/css">
+ .center { text-align: center; }
+</style>
+
+<!-- 검색 -->
+<div>
+	<form action="./" method="get" class="adminSearch">
+	<input type="hidden" name="mid" value="{$mid}" />
+	<input type="hidden" name="act" value="{$act}" />
+		<fieldset>
+			<label for="domain">{$lang->domain}</label>
+			<input type="text" name="domain" id="domain" value="{htmlspecialchars($domain)}" class="itx" />
+			<button type="submit" class="bn">{$lang->cmd_search}</button>
+			<a href="{getUrl('','mid',$mid,'act',$act)}" class="bn">{$lang->cmd_cancel}</a>
+		</fieldset>
+	</form>
+</div>
+
+<hr />
+
+<form id="fo_list" action="./" method="get" onsubmit="return procFilter(this, delete_checked)">
+<input type="hidden" name="mid" value="{$mid}" />
+<input type="hidden" name="page" value="{$page}" />
+
+<p>Total {number_format($total_count)}, Page {number_format($page)}/{number_format($total_page)}</p>
+
+<!-- 모듈 선택 -->
+<div>
+	<button type="submit" class="bn">{$lang->cmd_delete_checked}</button>
+</div>
+
+<hr />
+
+<!-- 목록 -->
+
+
+<!--@foreach($client_list as $no => $val)-->
+<table cellspacing="0" class="crossTable clear">
+	<tr>
+		<th><input type="checkbox" name="cart" value="{$val->client_srl}" /> {$no}</th>
+	</tr>
+	<tr>
+		<th><div>Client Token</div></th>
+	</tr>
+	<tr>
+		<td>{$val->client_token}</td>
+	</tr>
+	<tr>
+		<th><div>{$lang->domain}</div></th>
+	</tr>
+	<tr>
+		<td>
+			{@$domain_array = explode(',', $val->domain)}
+			<!--@foreach($domain_array as &$val2)-->
+				{@$val2 = trim($val2)}
+			<!--@end-->
+			{@$domain = implode('<br />', $domain_array)}
+			{$domain}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="{getUrl('act','dispSocialxeserverModifyClient','client_srl',$val->client_srl)}" class="bn">{$lang->cmd_setup}</a>
+			<a href="#" onclick="doDeleteClient('{$val->client_srl}');return false;" class="bn">{$lang->cmd_delete}</a>
+		</td>
+	</tr>
+</table>
+<!--@end-->
+
+<!-- 모듈 선택 -->
+<div>
+	<button type="submit" class="bn">{$lang->cmd_delete_checked}</button>
+</div>
+
+</form>
+
+<div class="pn">
+	<!--@if($page != 1)-->
+	<a href="{getUrl('page',$page-1)}">&lsaquo; {$lang->cmd_prev}</a>
+	<!--@endif-->
+	<strong>{$page} / {$page_navigation->last_page}</strong>
+	<!--@if($page != $page_navigation->last_page)-->
+	<a href="{getUrl('page',$page+1)}">{$lang->cmd_next} &rsaquo;</a>
+	<!--@endif-->
+</div>
+
+<div class="center">
+	<a href="{getUrl('act', 'dispSocialxeserverInsertClient', 'client_srl', '')}" class="bn"><span>{$lang->cmd_insert}</span></a>
+</div>
+
+</div>

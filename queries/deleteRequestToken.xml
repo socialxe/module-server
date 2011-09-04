@@ -1,0 +1,8 @@
+<query id="socialxeserver_request" action="delete">
+	<tables>
+		<table name="socialxeserver_request" />
+	</tables>
+	<conditions>
+		<condition operation="less" column="regdate" var="regdate" notnull="notnull" />
+	</conditions>
+</query>

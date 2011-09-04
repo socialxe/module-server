@@ -1,0 +1,11 @@
+<query id="getClients" action="select">
+	<tables>
+		<table name="socialxeserver_member" />
+	</tables>
+	<columns>
+		<column name="*" />
+	</columns>
+	<conditions>
+		<condition operation="in" column="client_srl" var="client_srls" />
+	</conditions>
+</query>

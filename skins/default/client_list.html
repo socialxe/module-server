@@ -1,0 +1,84 @@
+<!--#include("./header.html")-->
+
+<!--%import("filter/delete_checked.xml")-->
+
+<style type="text/css">
+ .center { text-align: center; }
+</style>
+
+<!-- 검색 -->
+<div class="fl">
+	<form action="./" method="get" class="adminSearch">
+	<input type="hidden" name="mid" value="{$mid}" />
+	<input type="hidden" name="act" value="{$act}" />
+		<fieldset>
+			<label for="domain">{$lang->domain}</label>
+			<input type="text" name="domain" id="domain" value="{htmlspecialchars($domain)}" class="inputTypeText" />
+			<span class="button blue"><input type="submit" value="{$lang->cmd_search}" /></span>
+			<a href="{getUrl('','mid',$mid,'act',$act)}" class="button black"><span>{$lang->cmd_cancel}</span></a>
+		</fieldset>
+	</form>
+</div>
+
+<form id="fo_list" action="./" method="get" onsubmit="return procFilter(this, delete_checked)">
+<input type="hidden" name="mid" value="{$mid}" />
+<input type="hidden" name="page" value="{$page}" />
+
+<!-- 모듈 선택 -->
+<div class="fr">
+	<span class="button red"><input type="submit" value="{$lang->cmd_delete_checked}" /></span>
+</div>
+
+<!-- 목록 -->
+<table cellspacing="0" class="crossTable clear">
+<caption>Total {number_format($total_count)}, Page {number_format($page)}/{number_format($total_page)}</caption>
+<thead>
+	<tr>
+		<th scope="col"><div>{$lang->no}</div></th>
+		<th scope="col"><div><input type="checkbox" onclick="XE.checkboxToggleAll(); return false;" /></div></th>
+		<th scope="col" class="wide"><div>Client Token</div></th>
+		<th scope="col"><div>{$lang->domain}</div></th>
+		<th colspan="2">&nbsp;</th>
+	</tr>
+</thead>
+<tbody>
+	<!--@foreach($client_list as $no => $val)-->
+	<tr>
+		<td class="number center">{$no}</td>
+		<td class="center"><input type="checkbox" name="cart" value="{$val->client_srl}" /></td>
+		<td class="center">{$val->client_token}</td>
+		<td class="left">
+			{@$domain_array = explode(',', $val->domain)}
+			<!--@foreach($domain_array as &$val2)-->
+				{@$val2 = trim($val2)}
+			<!--@end-->
+			{@$domain = implode('<br />', $domain_array)}
+			{$domain}
+		</td>
+		<td><a href="{getUrl('act','dispSocialxeserverModifyClient','client_srl',$val->client_srl)}" class="buttonSet buttonSetting"><span>{$lang->cmd_setup}</span></a></td>
+		<td><a href="#" onclick="doDeleteClient('{$val->client_srl}');return false;" title="{htmlspecialchars($lang->cmd_delete)}" class="buttonSet buttonDelete"><span>{$lang->cmd_delete}</span></a></td>
+	</tr>
+	<!--@end-->
+</tbody>
+</table>
+
+</form>
+
+<div class="fr">
+	<a href="{getUrl('act', 'dispSocialxeserverInsertClient', 'client_srl', '')}" class="button"><span>{$lang->cmd_insert}</span></a>
+</div>
+
+<!-- 페이지 네비게이션 -->
+<div class="pagination a1">
+	<a href="{getUrl('page','','module_srl',$module_srl)}" class="prevEnd">{$lang->first_page}</a>
+	<!--@while($page_no = $page_navigation->getNextPage())-->
+		<!--@if($page == $page_no)-->
+			<strong>{$page_no}</strong>
+		<!--@else-->
+			<a href="{getUrl('page',$page_no,'module_srl',$module_srl)}">{$page_no}</a>
+		<!--@end-->
+	<!--@end-->
+	<a href="{getUrl('page',$page_navigation->last_page,'module_srl',$module_srl)}" class="nextEnd">{$lang->last_page}</a>
+</div>
+
+<!--#include("./footer.html")-->

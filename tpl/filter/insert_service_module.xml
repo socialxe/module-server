@@ -1,0 +1,7 @@
+<filter name="insert_service_module" module="socialxeserver" act="procSocialxeserverAdminInsertServiceModule" >
+	<form>
+		<node target="service_id" required="true" maxlength="40" filter="alpha_number" />
+	</form>
+	<parameter />
+	<response />
+</filter>

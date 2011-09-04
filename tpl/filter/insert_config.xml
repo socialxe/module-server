@@ -1,0 +1,2 @@
+<filter name="insert_config" module="socialxeserver" act="procSocialxeserverAdminInsertConfig" confirm_msg_code="confirm_submit">
+</filter>

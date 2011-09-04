@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin version="0.2">
+	<title xml:lang="ko">SocialXE Server 모바일 기본 스킨</title>
+	<title xml:lang="en">SocialXE Server Mobile Default Skin</title>
+	<title xml:lang="jp">SocialXEサーバモバイルデフォルトスキン</title>
+	<version>1.0</version>
+	<date>2011-02-07</date>
+
+	<author email_address="flysky@flysky.kr" link="http://socialxe.net/">
+		<name xml:lang="ko">난다날아</name>
+		<name xml:lang="en">flysky</name>
+		<name xml:lang="jp">flysky</name>
+	</author>
+</skin>

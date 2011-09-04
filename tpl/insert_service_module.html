@@ -1,0 +1,19 @@
+<!--#include("./header.html")-->
+
+<!--%import("filter/insert_service_module.xml")-->
+<form action="./" method="post" onsubmit="return procFilter(this, insert_service_module);">
+<table class="rowTable">
+<tr>
+	<th colspan="2">
+		{nl2br($lang->about_insert_service_module)}
+	</th>
+</tr>
+<tr>
+	<td>
+		{$lang->mid}
+		<input type="text" name="service_id" class="inputTypeText"/>
+		<span class="button black"><input type="submit" value="{$lang->cmd_insert_service_module}" /></span>
+	</td>
+</tr>
+</table>
+</form>

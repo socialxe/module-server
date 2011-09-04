@@ -1,0 +1,42 @@
+.socialxeserver .open{ display:block !important;}
+.socialxeserver h1.xeAdmin { float:left; white-space:nowrap; margin:0;padding:0;}
+.socialxeserver caption{ text-align:left;}
+.socialxeserver button{ cursor:pointer;}
+.socialxeserver hr{ display:none;}
+.socialxeserver fieldset{ border:0;}
+.socialxeserver fieldset legend{ font-size:0; line-height:0; position:absolute; visibility:hidden;}
+.socialxeserver .section{ margin-bottom:20px;}
+.socialxeserver .buttonArea{ text-align:center; padding:15px 0;}
+.socialxeserver button.text{ background:none; border:0; color:#0000ee;}
+.socialxeserver img.graphHr{ height:5px; vertical-align:middle;}
+.socialxeserver .ac{ text-align:center;}
+.socialxeserver .al{ text-align:left;}
+.socialxeserver .ar{ text-align:right;}
+
+.socialxeserver .rowTable{ width:100%; border:0; border-top:2px solid #cfcfcf; margin:0 0 20px 0; padding:0;}
+.socialxeserver .rowTable th div { white-space:nowrap; }
+.socialxeserver .rowTable tr.bg0{ background:#fff;}
+.socialxeserver .rowTable tr.bg1{ background:#f8f8f8;}
+.socialxeserver .rowTable th,
+.socialxeserver .rowTable td{ border:0; padding:5px 10px; text-align:left; vertical-align:top;}
+.socialxeserver .rowTable th{ background:#f4f4f4;}
+.socialxeserver .rowTable tbody th{ border-bottom:1px solid #e5e5e5;}
+.socialxeserver .rowTable td{ border-bottom:1px solid #f0f0f0;}
+
+.socialxeserver .rowTable th.button, .socialxeserver .colTable th.button, .socialxeserver .crossTable th.button { text-align:right; }
+.socialxeserver .rowTable td.alert, .socialxeserver .colTable td.alert, .socialxeserver .crossTable td.alert  { color:red !important; }
+.socialxeserver .rowTable td.alert a, .socialxeserver .colTable td.alert a, .socialxeserver .crossTable td.alert a { text-decoration:none; color:red !important; }
+
+.socialxeserver .colTable td.wide, .socialxeserver .rowTable td.wide, .socialxeserver .crossTable td.wide { width:100%;}
+
+.socialxeserver .crossTable{ width:100%; border:0; margin:0 0 20px 0; padding:0;}
+.socialxeserver .crossTable th div { white-space:nowrap; }
+.socialxeserver .crossTable th,
+.socialxeserver .crossTable td{ border:0; padding:5px 10px; vertical-align:top;}
+.socialxeserver .crossTable th{ background:#f4f4f4;}
+.socialxeserver .crossTable thead th{ border-top:2px solid #cfcfcf; border-bottom:1px solid #e5e5e5; background-image:url(../../../../admin/tpl/img/lineVrText.gif); background-repeat:no-repeat; background-position:left center;}
+.socialxeserver .crossTable thead th:first-child{ background-image:none;}
+.socialxeserver .crossTable tbody th{ border-bottom:1px solid #e5e5e5; text-align:left;}
+.socialxeserver .crossTable td{ border-bottom:1px solid #f0f0f0;}
+
+.socialxeserver .empty { border: 1px solid #ccc; padding: 20px; }

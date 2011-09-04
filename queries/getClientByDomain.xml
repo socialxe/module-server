@@ -1,0 +1,12 @@
+<query id="getClientByDomain" action="select">
+	<tables>
+		<table name="socialxeserver_member" />
+	</tables>
+	<columns>
+		<column name="*" />
+	</columns>
+	<conditions>
+		<condition operation="like" column="domain" var="domain" />
+		<condition operation="notequal" column="client_srl" var="client_srl" pipe="and" />
+	</conditions>
+</query>

@@ -1,0 +1,23 @@
+<!--#include("./header.html")-->
+
+<!--%import("filter/insert_client.xml")-->
+
+<form action="./" method="get" onsubmit="return procFilter(this, insert_client)">
+<input type="hidden" name="mid" value="{$mid}" />
+<table cellspacing="0" class="rowTable">
+<tr>
+	<th scope="col" class="w200"><div>{$lang->domain}</div></th>
+	<td>
+		<input type="text" name="domain" value="{htmlspecialchars($client->domain)}" class="inputTypeText w400" />
+		<p>{$lang->about_client_domain}</p>
+	</td>
+</tr>
+<tr class="row2">
+	<th colspan="2" class="button">
+		<span class="button black strong"><input type="submit" value="{$lang->cmd_registration}" accesskey="s" /></span>
+	</th>
+</tr>
+</table>
+</form>
+
+<!--#include("./footer.html")-->

@@ -1,0 +1,36 @@
+<!--#include("./header.html")-->
+
+<!--%import("filter/modify_client.xml")-->
+
+<div class="socialxeserver">
+
+<form action="./" method="get" onsubmit="return procFilter(this, modify_client)" id="fo_obj">
+<input type="hidden" name="mid" value="{$mid}" />
+<input type="hidden" name="client_srl" value="{$client_srl}" />
+
+<table cellspacing="0" class="rowTable">
+<tr>
+	<th><div>Client Token</div></th>
+</tr>
+<tr>
+	<td>{$client_info->client_token}</td>
+</tr>
+<tr>
+	<th><div>{$lang->domain}</div></th>
+</tr>
+<tr>
+	<td>
+		<input type="text" name="domain" value="{$client_info->domain}" class="itx"/>
+		<p>{$lang->about_client_domain}</p>
+	</td>
+</tr>
+<tr class="row2">
+	<th class="button">
+		<button type="submit" class="bn">{$lang->cmd_registration}</button>
+	</th>
+</tr>
+</table>
+</form>
+
+
+</div>

@@ -1,0 +1,10 @@
+<query id="insertRequestToken" action="insert">
+	<tables>
+		<table name="socialxeserver_request" />
+	</tables>
+	<columns>
+		<column name="client_srl" var="client_srl" notnull="notnull" filter="number" />
+		<column name="request_token" var="request_token" notnull="notnull" />
+		<column name="regdate" default="curdate()" />
+	</columns>
+</query>

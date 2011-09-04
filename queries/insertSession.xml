@@ -1,0 +1,9 @@
+<query id="insertSession" action="insert">
+	<tables>
+		<table name="socialxeserver_session" />
+	</tables>
+	<columns>
+		<column name="auto_login_key" var="auto_login_key" notnull="notnull" />
+		<column name="session" var="session" />
+	</columns>
+</query>

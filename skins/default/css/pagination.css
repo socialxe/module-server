@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* NHN (developers@xpressengine.com) */
+
+/* Pagination Reset */
+.socialxeserver .pagination{ padding:15px 0; margin:0; text-align:center; clear:both; }
+.socialxeserver .pagination *{ margin:0; padding:0;}
+.socialxeserver .pagination img{ border:0;}
+.socialxeserver .pagination a,
+.socialxeserver .pagination strong{ position:relative; display:inline-block; text-decoration:none; line-height:normal; color:#333; font-family:Tahoma, Sans-serif; vertical-align:middle;}
+.socialxeserver .pagination a:hover,
+.socialxeserver .pagination a:active,
+.socialxeserver .pagination a:focus{ background-color:#f4f4f4 !important; }
+.socialxeserver .pagination strong{ color:#ff6600 !important;}
+.socialxeserver .pagination a.prev,
+.socialxeserver .pagination a.prevEnd,
+.socialxeserver .pagination a.next,
+.socialxeserver .pagination a.nextEnd{ font-weight:normal !important; border:none !important; margin:0 !important; white-space:nowrap; }
+
+/* Pagination A1 */
+.socialxeserver .pagination.a1 a,
+.socialxeserver .pagination.a1 strong{ margin:0 -4px; padding:1px 10px 1px 8px; border:none; border-left:1px solid #ccc; border-right:1px solid #ddd; font-weight:bold; font-size:12px; background:#fff;}
+.socialxeserver .pagination.a1 a.prev{ padding-left:10px; background:#fff url(../../../../admin/tpl/img/arrowPrevA1.gif) no-repeat left center; }
+.socialxeserver .pagination.a1 a.prevEnd{ padding-left:15px; background:#fff url(../../../../admin/tpl/img/arrowPrevEndA1.gif) no-repeat left center; }
+.socialxeserver .pagination.a1 a.next{ padding-right:10px; background:#fff url(../../../../admin/tpl/img/arrowNextA1.gif) no-repeat right center; }
+.socialxeserver .pagination.a1 a.nextEnd{ padding-right:15px; background:#fff url(../../../../admin/tpl/img/arrowNextEndA1.gif) no-repeat right center; }
+
+/* Pagination A2 */
+.socialxeserver .pagination.a2 a,
+.socialxeserver .pagination.a2 strong{ margin:0 -4px; padding:0 10px 0 8px; font-weight:bold; font-size:11px; border:none; border-left:1px solid #ddd; border-right:1px solid #ccc; background:#fff; }
+.socialxeserver .pagination.a2 a.prev{ padding-left:10px; background:#fff url(../../../../admin/tpl/img/arrowPrevA1.gif) no-repeat left center; }
+.socialxeserver .pagination.a2 a.prevEnd{ padding-left:15px; background:#fff url(../../../../admin/tpl/img/arrowPrevEndA1.gif) no-repeat left center; }
+.socialxeserver .pagination.a2 a.next{ padding-right:10px; background:#fff url(../../../../admin/tpl/img/arrowNextA1.gif) no-repeat right center; }
+.socialxeserver .pagination.a2 a.nextEnd{ padding-right:15px; background:#fff url(../../../../admin/tpl/img/arrowNextEndA1.gif) no-repeat right center; }
+
+/* Pagination B1 */
+.socialxeserver .pagination.b1 a,
+.socialxeserver .pagination.b1 strong{ margin:0 -2px; padding:2px 8px; font-weight:bold; font-size:12px;}
+.socialxeserver .pagination.b1 a.prev,
+.socialxeserver .pagination.b1 a.prevEnd{ padding-left:16px; background:url(../../../../admin/tpl/img/arrowPrevB1.gif) no-repeat left center; }
+.socialxeserver .pagination.b1 a.next,
+.socialxeserver .pagination.b1 a.nextEnd{ padding-right:16px; background:url(../../../../admin/tpl/img/arrowNextB1.gif) no-repeat right center; }
+
+/* Pagination B2 */
+.socialxeserver .pagination.b2 a,
+.socialxeserver .pagination.b2 strong{ margin:0 -2px; padding:2px 6px; font-size:11px;}
+.socialxeserver .pagination.b2 a.prev,
+.socialxeserver .pagination.b2 a.prevEnd{ padding-left:12px; background:url(../../../../admin/tpl/img/arrowPrevB1.gif) no-repeat left center; }
+.socialxeserver .pagination.b2 a.next,
+.socialxeserver .pagination.b2 a.nextEnd{ padding-right:12px; background:url(../../../../admin/tpl/img/arrowNextB1.gif) no-repeat right center; }
+
+/* Pagination C1 */
+.socialxeserver .pagination.c1 a,
+.socialxeserver .pagination.c1 strong{ margin:0 -2px; padding:2px 4px; font-size:12px;}
+.socialxeserver .pagination.c1 a.prev,
+.socialxeserver .pagination.c1 a.prevEnd,
+.socialxeserver .pagination.c1 a.next,
+.socialxeserver .pagination.c1 a.nextEnd{ display:inline-block; width:13px; height:14px; padding:3px 4px; margin:0;}
+.socialxeserver .pagination.c1 a.prev,
+.socialxeserver .pagination.c1 a.prevEnd{ background:url(../../../../admin/tpl/img/arrowPrevC1.gif) no-repeat center;}
+.socialxeserver .pagination.c1 a.next,
+.socialxeserver .pagination.c1 a.nextEnd{ background:url(../../../../admin/tpl/img/arrowNextC1.gif) no-repeat center;}
+.socialxeserver .pagination.c1 a.prev span,
+.socialxeserver .pagination.c1 a.prevEnd span,
+.socialxeserver .pagination.c1 a.next span,
+.socialxeserver .pagination.c1 a.nextEnd span{ position:absolute; width:0; height:0; overflow:hidden; visibility:hidden;}
+
+/* Pagination C2 */
+.socialxeserver .pagination.c2 a,
+.socialxeserver .pagination.c2 strong{ margin:0 -2px; padding:2px 4px; font-size:11px;}
+.socialxeserver .pagination.c2 a.prev,
+.socialxeserver .pagination.c2 a.prevEnd,
+.socialxeserver .pagination.c2 a.next,
+.socialxeserver .pagination.c2 a.nextEnd{ display:inline-block; width:13px; height:14px; padding:3px 4px; margin:0;}
+.socialxeserver .pagination.c2 a.prev,
+.socialxeserver .pagination.c2 a.prevEnd{ background:url(../../../../admin/tpl/img/arrowPrevC1.gif) no-repeat center;}
+.socialxeserver .pagination.c2 a.next,
+.socialxeserver .pagination.c2 a.nextEnd{ background:url(../../../../admin/tpl/img/arrowNextC1.gif) no-repeat center;}
+.socialxeserver .pagination.c2 a.prev span,
+.socialxeserver .pagination.c2 a.prevEnd span,
+.socialxeserver .pagination.c2 a.next span,
+.socialxeserver .pagination.c2 a.nextEnd span{ position:absolute; width:0; height:0; overflow:hidden; visibility:hidden;}
+
+
+
+
