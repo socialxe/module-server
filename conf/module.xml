@@ -34,7 +34,7 @@
 
 		<action name="procSocialxeserverInsertClient" type="controller" />
 		<action name="procSocialxeserverDeleteCheckedClient" type="controller" />
-		<action name="procSocialxeserverAPI" type="controller" standalone="true" />
+		<action name="procSocialxeserverAPI" type="controller" standalone="true" method="get" />
 		<action name="procSocialxeserverCallback" type="controller" standalone="true" />
 
 		<action name="dispSocialxeserverAdminGetYozmAccessToken" type="view" standalone="true" />
