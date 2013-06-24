@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<lang>
+	<item name="socialxeserver">
+		<value xml:lang="ko"><![CDATA[SocialXE 서버]]></value>
+		<value xml:lang="en"><![CDATA[SocialXE Server]]></value>
+		<value xml:lang="jp"><![CDATA[SocialXEサーバ]]></value>
+		<value xml:lang="zh-CN"><![CDATA[SocialXE服务器]]></value>
+		<value xml:lang="zh-TW"><![CDATA[SocialXE 主機]]></value>
+	</item>
+	<item name="twitter_consumer_key">
+		<value xml:lang="ko"><![CDATA[트위터 Consumer Key]]></value>
+		<value xml:lang="en"><![CDATA[Twitter Consumer Key]]></value>
+	</item>
+	<item name="twitter_consumer_key_secret">
+		<value xml:lang="ko"><![CDATA[트위터 Consumer Key Secret]]></value>
+		<value xml:lang="en"><![CDATA[Twitter Consumer Key Secret]]></value>
+	</item>
+	<item name="twitter_access_token">
+		<value xml:lang="ko"><![CDATA[트위터 Access Token]]></value>
+		<value xml:lang="en"><![CDATA[Twitter Access Token]]></value>
+	</item>
+	<item name="twitter_access_token_secret">
+		<value xml:lang="ko"><![CDATA[트위터 Access Token Secret]]></value>
+		<value xml:lang="en"><![CDATA[Twitter Access Token Secret]]></value>
+	</item>
+	<item name="me2day_api_key">
+		<value xml:lang="ko"><![CDATA[미투데이 API 사용자 키]]></value>
+		<value xml:lang="en"><![CDATA[Me2day API Consumer Key]]></value>
+	</item>
+	<item name="me2day_user_id">
+		<value xml:lang="ko"><![CDATA[미투데이 아이디]]></value>
+		<value xml:lang="en"><![CDATA[Me2day ID]]></value>
+	</item>
+	<item name="me2day_application_key">
+		<value xml:lang="ko"><![CDATA[미투데이 어플리케이션 키]]></value>
+		<value xml:lang="en"><![CDATA[Me2day application key]]></value>
+	</item>
+	<item name="facebook_app_id">
+		<value xml:lang="ko"><![CDATA[페이스북 App ID]]></value>
+		<value xml:lang="en"><![CDATA[Facebook App ID]]></value>
+	</item>
+	<item name="facebook_app_secret">
+		<value xml:lang="ko"><![CDATA[페이스북 App Secret]]></value>
+		<value xml:lang="en"><![CDATA[Facebook App Secret]]></value>
+	</item>
+	<item name="yozm_consumer_key">
+		<value xml:lang="ko"><![CDATA[요즘 Consumer Key]]></value>
+		<value xml:lang="en"><![CDATA[Yozm Consumer Key]]></value>
+	</item>
+	<item name="yozm_consumer_key_secret">
+		<value xml:lang="ko"><![CDATA[요즘 Consumer Key Secret]]></value>
+		<value xml:lang="en"><![CDATA[Yozm Consumer Key Secret]]></value>
+	</item>
+	<item name="yozm_access_token">
+		<value xml:lang="ko"><![CDATA[요즘 Access Token]]></value>
+		<value xml:lang="en"><![CDATA[Yozm Access Token]]></value>
+	</item>
+	<item name="yozm_access_token_secret">
+		<value xml:lang="ko"><![CDATA[요즘 Access Token Secret]]></value>
+		<value xml:lang="en"><![CDATA[Yozm Access Token Secret]]></value>
+	</item>
+	<item name="get_yozm_access_token">
+		<value xml:lang="ko"><![CDATA[요즘 Access Token 얻기]]></value>
+		<value xml:lang="en"><![CDATA[Get Yozm Access Token]]></value>
+	</item>
+	<item name="bitly_username">
+		<value xml:lang="ko"><![CDATA[bit.ly Username]]></value>
+		<value xml:lang="en"><![CDATA[bit.ly Username]]></value>
+	</item>
+	<item name="bitly_api_key">
+		<value xml:lang="ko"><![CDATA[bit.ly API Key]]></value>
+		<value xml:lang="en"><![CDATA[bit.ly API Key]]></value>
+		<value xml:lang="zh-TW"><![CDATA[bit.ly API key]]></value>
+	</item>
+	<item name="service_id">
+		<value xml:lang="ko"><![CDATA[모듈 이름]]></value>
+		<value xml:lang="en"><![CDATA[Module name]]></value>
+		<value xml:lang="jp"><![CDATA[モジュール名]]></value>
+		<value xml:lang="zh-CN"><![CDATA[模块名]]></value>
+		<value xml:lang="zh-TW"><![CDATA[模組名稱]]></value>
+	</item>
+	<item name="empty_client">
+		<value xml:lang="ko"><![CDATA[등록된 클라이언트가 없습니다.]]></value>
+		<value xml:lang="en"><![CDATA[There is no registered client.]]></value>
+		<value xml:lang="jp"><![CDATA[登録されたクライアントでが在りません。]]></value>
+		<value xml:lang="zh-CN"><![CDATA[没有注册客户端。]]></value>
+		<value xml:lang="zh-TW"><![CDATA[尚未註冊客戶端]]></value>
+	</item>
+	<item name="cmd_client_list">
+		<value xml:lang="ko"><![CDATA[클라이언트 목록]]></value>
+		<value xml:lang="en"><![CDATA[Client list]]></value>
+		<value xml:lang="jp"><![CDATA[クライアントリスト]]></value>
+		<value xml:lang="zh-CN"><![CDATA[客户端列表]]></value>
+		<value xml:lang="zh-TW"><![CDATA[客戶端列表]]></value>
+	</item>
+	<item name="cmd_setting">
+		<value xml:lang="ko"><![CDATA[환경설정]]></value>
+		<value xml:lang="en"><![CDATA[Configuration]]></value>
+		<value xml:lang="jp"><![CDATA[コンフィギュレーション]]></value>
+		<value xml:lang="zh-CN"><![CDATA[控制面板]]></value>
+		<value xml:lang="zh-TW"><![CDATA[環境設定]]></value>
+	</item>
+	<item name="cmd_delete_checked">
+		<value xml:lang="ko"><![CDATA[선택 삭제]]></value>
+		<value xml:lang="en"><![CDATA[Delete the checked item(s)]]></value>
+		<value xml:lang="jp"><![CDATA[選択したアイテム削除]]></value>
+		<value xml:lang="zh-CN"><![CDATA[删除选择]]></value>
+		<value xml:lang="zh-TW"><![CDATA[刪除所選項目]]></value>
+	</item>
+	<item name="cmd_modify_client">
+		<value xml:lang="ko"><![CDATA[클라이언트 정보 수정]]></value>
+		<value xml:lang="en"><![CDATA[Modify the client information]]></value>
+		<value xml:lang="jp"><![CDATA[クライアント情報変更]]></value>
+		<value xml:lang="zh-CN"><![CDATA[修改客户端信息]]></value>
+		<value xml:lang="zh-TW"><![CDATA[修改客戶端資料]]></value>
+	</item>
+	<item name="cmd_service_config">
+		<value xml:lang="ko"><![CDATA[서비스 모듈 설정]]></value>
+		<value xml:lang="en"><![CDATA[Service module configuration]]></value>
+		<value xml:lang="jp"><![CDATA[サービスモジュール選択]]></value>
+		<value xml:lang="zh-CN"><![CDATA[设置服务模块]]></value>
+		<value xml:lang="zh-TW"><![CDATA[選擇服務模組]]></value>
+	</item>
+	<item name="cmd_insert_service_module">
+		<value xml:lang="ko"><![CDATA[서비스 모듈 생성]]></value>
+		<value xml:lang="en"><![CDATA[Create a service module]]></value>
+		<value xml:lang="jp"><![CDATA[サービスモジュール生成]]></value>
+		<value xml:lang="zh-CN"><![CDATA[新建服务模块]]></value>
+		<value xml:lang="zh-TW"><![CDATA[建立服務模組]]></value>
+	</item>
+	<item name="cmd_create_client">
+		<value xml:lang="ko"><![CDATA[클라이언트 등록]]></value>
+		<value xml:lang="en"><![CDATA[Register a client]]></value>
+		<value xml:lang="jp"><![CDATA[クライアント登録]]></value>
+		<value xml:lang="zh-CN"><![CDATA[注册客户端]]></value>
+		<value xml:lang="zh-TW"><![CDATA[建立客戶端]]></value>
+	</item>
+	<item name="about_client_domain">
+		<value xml:lang="ko"><![CDATA[클라이언트 도메인을 콤마(,)로 구분하여 입력해주세요. http://와 www.는 생략해주세요.]]></value>
+		<value xml:lang="en"><![CDATA[Insert client domain(s). Each domain can be divided by a comma(,). Write domain without http:// or www. please.]]></value>
+		<value xml:lang="jp"><![CDATA[クライアントドメインをコンマ「,」で区切ってください。http://とwww.は略して下さい。]]></value>
+		<value xml:lang="zh-CN"><![CDATA[请用逗号(,)以区分客户端域名。注意不要输入http://或www.。]]></value>
+		<value xml:lang="zh-TW"><![CDATA[請輸入客戶端網域名稱，多個網域名稱間可用逗號(,)區分。 請勿輸入 http:// 或 www開頭的網域名稱。]]></value>
+	</item>
+	<item name="about_insert_service_module">
+		<value xml:lang="ko"><![CDATA[사용자가 직접 클라이언트 등록을 하고 자신의 도메인을 관리하기 위해서는 서비스 모듈을 생성하여야 합니다.]]></value>
+		<value xml:lang="en"><![CDATA[Client users can register their domains and manage it, after you create service module. You should create it.]]></value>
+		<value xml:lang="jp"><![CDATA[ユーザーが直にクライアントを登録して自分のドメインを管理するためにはサービスモジュールを生成しなければなりません。]]></value>
+		<value xml:lang="zh-CN"><![CDATA[用户想要自己注册客户端和管理域名的话要得新建服务模块。]]></value>
+		<value xml:lang="zh-TW"><![CDATA[客戶端用戶在建立服務模組後，可註冊與變更所屬的網域名稱。]]></value>
+	</item>
+	<item name="msg_invalid_provider">
+		<value xml:lang="ko"><![CDATA[올바른 서비스 제공자가 아닙니다.]]></value>
+		<value xml:lang="en"><![CDATA[Invalid service provider.]]></value>
+		<value xml:lang="jp"><![CDATA[正しいサービスプロバイダーではありません。]]></value>
+		<value xml:lang="zh-CN"><![CDATA[提供服务无效。]]></value>
+		<value xml:lang="zh-TW"><![CDATA[不正確的服務提供者]]></value>
+	</item>
+	<item name="msg_old_token">
+		<value xml:lang="ko"><![CDATA[올바른 토큰값이 아닙니다.]]></value>
+		<value xml:lang="en"><![CDATA[Invalid token value.]]></value>
+		<value xml:lang="jp"><![CDATA[正しいtokenではありません。]]></value>
+		<value xml:lang="zh-CN"><![CDATA[token值无效。 ]]></value>
+		<value xml:lang="zh-TW"><![CDATA[不正確的 token 值]]></value>
+	</item>
+	<item name="msg_error_twitter">
+		<value xml:lang="ko"><![CDATA[트위터에 접속할 수 없습니다. 페이지를 새로고치거나 잠시 후 다시 시도해주세요.]]></value>
+		<value xml:lang="en"><![CDATA[SocialXE server can not connect to Twitter. Refresh to retry or try it after a moment.]]></value>
+		<value xml:lang="jp"><![CDATA[Twitterに接續できません。ページをリロードなさるとか、稍あってもう一度してください。]]></value>
+		<value xml:lang="zh-CN"><![CDATA[无法连接Twitter。刷新页面或稍后再试。]]></value>
+		<value xml:lang="zh-TW"><![CDATA[SocialXE 主機無法與 Twitter連線。 請重整頁面或稍後再試。]]></value>
+	</item>
+	<item name="msg_invalid_request_client">
+		<value xml:lang="ko"><![CDATA[인증된 클라이언트가 아닙니다.]]></value>
+		<value xml:lang="en"><![CDATA[Uncertified client.]]></value>
+		<value xml:lang="jp"><![CDATA[認証されたクライアントではありません。]]></value>
+		<value xml:lang="zh-CN"><![CDATA[客户端未通过身份验证。]]></value>
+		<value xml:lang="zh-TW"><![CDATA[客戶端尚未認證。]]></value>
+	</item>
+	<item name="msg_invalid_request_domain">
+		<value xml:lang="ko"><![CDATA[사용이 허용된 도메인이 아닙니다.]]></value>
+		<value xml:lang="en"><![CDATA[The domain is not allowed to access.]]></value>
+		<value xml:lang="jp"><![CDATA[使用が許容されたドメインではありません。]]></value>
+		<value xml:lang="zh-CN"><![CDATA[该域名无法使用。]]></value>
+		<value xml:lang="zh-TW"><![CDATA[不允許訪問的域名。]]></value>
+	</item>
+	<item name="msg_notconnect_me2day">
+		<value xml:lang="ko"><![CDATA[미투데이에 접속할 수 없습니다. 페이지를 새로고치거나 잠시 후 다시 시도해주세요.]]></value>
+		<value xml:lang="en"><![CDATA[SocialXE server can not connect to Me2day. Refresh to retry or try it after a moment.]]></value>
+		<value xml:lang="jp"><![CDATA[Me2dayに接續できません。ページをリロードなさるとか、稍あってもう一度してください。]]></value>
+		<value xml:lang="zh-CN"><![CDATA[无法连接Me2day。刷新页面或稍后再试。]]></value>
+		<value xml:lang="zh-TW"><![CDATA[SocialXE 主機無法與 Me2day連線。 請重整頁面或稍後再試。]]></value>
+	</item>
+	<item name="msg_error_me2day">
+		<value xml:lang="ko"><![CDATA[미투데이 API 요청 에러<br/>(%s)]]></value>
+		<value xml:lang="en"><![CDATA[Me2day API request error<br />(%s)]]></value>
+		<value xml:lang="zh-CN"><![CDATA[Me2day API 请求错误<br />(%s)]]></value>
+		<value xml:lang="zh-TW"><![CDATA[Me2day API請求錯誤<br />(%s)]]></value>
+	</item>
+	<item name="msg_error_token">
+		<value xml:lang="ko"><![CDATA[토큰을 가져오는데 실패했습니다.]]></value>
+		<value xml:lang="en"><![CDATA[Fail to get a token.]]></value>
+		<value xml:lang="jp"><![CDATA[tokenを得る事が失敗しました。]]></value>
+		<value xml:lang="zh-CN"><![CDATA[token请求失败。]]></value>
+		<value xml:lang="zh-TW"><![CDATA[Token取得失敗]]></value>
+	</item>
+	<item name="msg_error_yozm">
+		<value xml:lang="ko"><![CDATA[요즘에 접속할 수 없습니다. 페이지를 새로고치거나 잠시 후 다시 시도해주세요.]]></value>
+		<value xml:lang="en"><![CDATA[SocialXE server can not connect to Yozm. Refresh to retry or try it after a moment.]]></value>
+		<value xml:lang="jp"><![CDATA[Yozmに接續できません。ページをリロードなさるとか、稍あってもう一度してください。]]></value>
+		<value xml:lang="zh-CN"><![CDATA[无法连接Yozm。刷新页面或稍后再试。]]></value>
+		<value xml:lang="zh-TW"><![CDATA[SocialXE 主機無法與 Yozm連線。 請重整頁面或稍後再試。]]></value>
+	</item>
+	<item name="msg_error_yozm_not_joined">
+		<value xml:lang="ko"><![CDATA[요즘 사용자가 아닙니다.]]></value>
+		<value xml:lang="en"><![CDATA[You are not a Yozm user.]]></value>
+		<value xml:lang="jp"><![CDATA[Yozmユーザーではありません。]]></value>
+		<value xml:lang="zh-CN"><![CDATA[Yozm用户名错误。]]></value>
+		<value xml:lang="zh-TW"><![CDATA[並非 Yozm用戶。]]></value>
+	</item>
+	<item name="msg_exsist_domain">
+		<value xml:lang="ko"><![CDATA[이미 등록된 도메인입니다.]]></value>
+		<value xml:lang="en"><![CDATA[The domain is already registered.]]></value>
+		<value xml:lang="jp"><![CDATA[もう登録されたドメインです。]]></value>
+		<value xml:lang="zh-CN"><![CDATA[该域名已登录过。]]></value>
+		<value xml:lang="zh-TW"><![CDATA[已註冊的網域名稱。]]></value>
+	</item>
+	<item name="msg_check_input_domain">
+		<value xml:lang="ko"><![CDATA[입력 값 중 유효한 도메인이 하나도 없습니다. 제대로 입력하셨나요?]]></value>
+		<value xml:lang="en"><![CDATA[There is no valid domain. Did you insert them correctly?]]></value>
+		<value xml:lang="jp"><![CDATA[入力ドメイン中有効の事がありません。ちゃんと入力したんですか?]]></value>
+		<value xml:lang="zh-CN"><![CDATA[没有有效域名，请核对后再输入?]]></value>
+		<value xml:lang="zh-TW"><![CDATA[請輸入正確的網域名稱。]]></value>
+	</item>
+	<item name="msg_check_support">
+		<value xml:lang="ko"><![CDATA[현재 환경에서 SocialXE 서버를 실행할 수 없습니다. 실행 환경을 확인하세요.]]></value>
+		<value xml:lang="en"><![CDATA[This environment can not support SocialXE. Check executable environment.]]></value>
+		<value xml:lang="jp"><![CDATA[今の環境ではSocialXEサーバを使う事ができません。実行環境を確かめて下さい。]]></value>
+		<value xml:lang="zh-CN"><![CDATA[当前环境无法使用SocialXE服务器，请检查执行环境。]]></value>
+		<value xml:lang="zh-TW"><![CDATA[SocialXE無法在目前的安裝環境中使用。 請確認安裝環境。]]></value>
+	</item>
+	<item name="provider" type="array">
+		<item name="twitter">
+			<value xml:lang="ko"><![CDATA[트위터]]></value>
+			<value xml:lang="en"><![CDATA[Twitter]]></value>
+		</item>
+		<item name="me2day">
+			<value xml:lang="ko"><![CDATA[미투데이]]></value>
+			<value xml:lang="en"><![CDATA[Me2day]]></value>
+		</item>
+		<item name="facbook">
+			<value xml:lang="ko"><![CDATA[페이스북]]></value>
+			<value xml:lang="en"><![CDATA[Facebook]]></value>
+		</item>
+		<item name="yozm">
+			<value xml:lang="ko"><![CDATA[요즘]]></value>
+			<value xml:lang="en"><![CDATA[Yozm]]></value>
+		</item>
+	</item>
+</lang>

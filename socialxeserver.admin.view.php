@@ -107,6 +107,9 @@
 				Context::set('mlayout_list', $mobile_layout_list);
 
 				$this->setTemplateFile('service_config');
+
+				$Security = new Security();
+				$Security->encodeHTML('skin_list..', 'mskin_list..', 'layout_list..', 'mlayout_list..');
 			}
 		}
 
@@ -121,34 +124,5 @@
 			$this->setTemplateFile('grant_list');
 		}
 
-		// 요즘 액세스 토큰 얻기
-		function dispSocialxeserverAdminGetYozmAccessToken(){
-			// 세션 세팅
-			$this->session->setSession('yozmgetaccess', true);
-
-			// 로그인 URL을 얻는다.
-			unset($output);
-			$output = $this->communicator->providerManager->getLoginUrl('yozm');
-			if (!$output->toBool()) return $output;
-			$url = $output->get('url');
-
-			// 리다이렉트
-			header('Location: ' . $url);
-			Context::close();
-			exit;
-		}
-
-		// 콜백
-		function dispSocialxeserverAdminCallback(){
-			$output = $this->communicator->access();
-			Context::set('access_token', $output->get('access_token'));
-
-			// 템플릿 파일 지정
-			$this->setTemplatePath($this->module_path.'tpl');
-			$this->setTemplateFile('yozmgetaccess');
-
-			// HTML 형식
-			Context::setRequestMethod('HTML');
-		}
 	}
 ?>

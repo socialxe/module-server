@@ -1,17 +1,13 @@
-<!--%import("js/admin.js")-->
+<load target="js/admin.js" />
 
-<h3 class="xeAdmin">{$lang->socialxeserver} <span class="gray">{$lang->cmd_management}</span></h3>
-
-<div class="header4">
-	<ul class="localNavigation">
-		<li <!--@if($act=='dispSocialxeserverAdminClient')-->class="on"<!--@end-->><a href="{getUrl('act','dispSocialxeserverAdminClient')}">{$lang->cmd_client_list}</a></li>
-		<!--@if($act=='dispSocialxeserverAdminModifyClient')-->
-		<li class="on"><a href="#">{$lang->cmd_modify_client}</a></li>
-		<!--@end-->
-		<li <!--@if($act=='dispSocialxeserverAdminServiceConfig')-->class="on"<!--@end-->><a href="{getUrl('act', 'dispSocialxeserverAdminServiceConfig')}">{$lang->cmd_service_config}</a></li>
-		<!--@if($service_module_info)-->
-		<li <!--@if($act=='dispSocialxeserverAdminServiceGrant')-->class="on"<!--@end-->><a href="{getUrl('act', 'dispSocialxeserverAdminServiceGrant')}">{$lang->cmd_manage_grant}</a></li>
-		<!--@end-->
-		<li <!--@if($act=='dispSocialxeserverAdminConfig')-->class="on"<!--@end-->><a href="{getUrl('act','dispSocialxeserverAdminConfig')}">{$lang->cmd_setting}</a></li>
-	</ul>
+<div class="x_page-header">
+	<h1>{$lang->socialxeserver}</h1>
 </div>
+
+<ul class="x_nav x_nav-tabs">
+	<li class="x_active"|cond="$act == 'dispSocialxeserverAdminClient'"><a href="{getUrl('act', 'dispSocialxeserverAdminClient')}">{$lang->cmd_client_list}</a></li>
+	<li cond="$act == 'dispSocialxeserverAdminModifyClient'" class="x_active"><a href="#">{$lang->cmd_modify_client}</a></li>
+	<li class="x_active"|cond="$act == 'dispSocialxeserverAdminServiceConfig'"><a href="{getUrl('act', 'dispSocialxeserverAdminServiceConfig')}">{$lang->cmd_service_config}</a></li>
+	<li cond="$service_module_info" class="x_active"|cond="$act == 'dispSocialxeserverAdminServiceGrant'"><a href="{getUrl('act', 'dispSocialxeserverAdminServiceGrant')}">{$lang->cmd_manage_grant}</a></li>
+	<li class="x_active"|cond="$act == 'dispSocialxeserverAdminConfig'"><a href="{getUrl('act', 'dispSocialxeserverAdminConfig')}">{$lang->cmd_setting}</a></li>
+</ul>

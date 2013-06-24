@@ -70,7 +70,7 @@ class socialxeServerProviderTwitter extends socialxeServerProvider{
 		}
 
 		// 트위터 oauth 객체 생성
-		$connection = new TwitterOAuth($this->twitter_consumer_key, $this->twitter_consumer_key_secret, $session['oauth_token'], $session['oauth_token_secret']);
+		$connection = new TwitterOAuth($this->consumer_key, $this->consumer_key_secret, $session['oauth_token'], $session['oauth_token_secret']);
 
 		// 액세스 토큰 요청
 		$access_token = $connection->getAccessToken($oauth_verifier);
@@ -81,6 +81,7 @@ class socialxeServerProviderTwitter extends socialxeServerProvider{
 		// 요청 성공 체크
 		if ($connection->http_code == 200){
 			// 사용자 정보도 받아서 저장해 놓는다.
+
 			$credentials = $connection->get('account/verify_credentials');
 
 			// 액세스 토큰과 사용자 정보를 묶는다.

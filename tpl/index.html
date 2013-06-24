@@ -1,116 +1,76 @@
-<!--#include("./header.html")-->
+<include target="header.html" />
 
 <!--%import("filter/insert_config.xml")-->
 
-<form action="./" method="get" onsubmit="return procFilter(this, insert_config)">
-<table cellspacing="0" class="rowTable">
-<tr>
-	<th scope="col" class="w200"><div>{$lang->twitter_consumer_key}</div></th>
-	<td>
-		<input type="text" name="twitter_consumer_key" value="{htmlspecialchars($config->twitter_consumer_key)}" class="inputTypeText w400" />
-	</td>
-</tr>
-<tr>
-	<th scope="col"><div>{$lang->twitter_consumer_key_secret}</div></th>
-	<td>
-		<input type="text" name="twitter_consumer_key_secret" value="{htmlspecialchars($config->twitter_consumer_key_secret)}" class="inputTypeText w400" />
-	</td>
-</tr>
-<tr>
-	<th scope="col"><div>{$lang->twitter_access_token}</div></th>
-	<td>
-		<input type="text" name="twitter_access_token" value="{htmlspecialchars($config->twitter_access_token)}" class="inputTypeText w400" />
-	</td>
-</tr>
-<tr>
-	<th scope="col"><div>{$lang->twitter_access_token_secret}</div></th>
-	<td>
-		<input type="text" name="twitter_access_token_secret" value="{htmlspecialchars($config->twitter_access_token_secret)}" class="inputTypeText w400" />
-	</td>
-</tr>
-</table>
-
-<table cellspacing="0" class="rowTable">
-<tr>
-	<th scope="col" class="w200"><div>{$lang->me2day_application_key}</div></th>
-	<td>
-		<input type="text" name="me2day_application_key" value="{htmlspecialchars($config->me2day_application_key)}" class="inputTypeText w400" />
-	</td>
-</tr>
-<tr>
-	<th scope="col"><div>{$lang->me2day_user_id}</div></th>
-	<td>
-		<input type="text" name="me2day_user_id" value="{htmlspecialchars($config->me2day_user_id)}" class="inputTypeText w400" />
-	</td>
-</tr>
-<tr>
-	<th scope="col"><div>{$lang->me2day_api_key}</div></th>
-	<td>
-		<input type="text" name="me2day_api_key" value="{htmlspecialchars($config->me2day_api_key)}" class="inputTypeText w400" />
-	</td>
-</tr>
-</table>
-
-<table cellspacing="0" class="rowTable">
-<tr>
-	<th scope="col" class="w200"><div>{$lang->facebook_app_id}</div></th>
-	<td>
-		<input type="text" name="facebook_app_id" value="{htmlspecialchars($config->facebook_app_id)}" class="inputTypeText w400" />
-	</td>
-</tr>
-<tr>
-	<th scope="col"><div>{$lang->facebook_app_secret}</div></th>
-	<td>
-		<input type="text" name="facebook_app_secret" value="{htmlspecialchars($config->facebook_app_secret)}" class="inputTypeText w400" />
-	</td>
-</tr>
-</table>
-
-<table cellspacing="0" class="rowTable">
-<tr>
-	<th scope="col" class="w200"><div>{$lang->yozm_consumer_key}</div></th>
-	<td>
-		<input type="text" name="yozm_consumer_key" value="{htmlspecialchars($config->yozm_consumer_key)}" class="inputTypeText w400" />
-	</td>
-</tr>
-<tr>
-	<th scope="col"><div>{$lang->yozm_consumer_key_secret}</div></th>
-	<td>
-		<input type="text" name="yozm_consumer_key_secret" value="{htmlspecialchars($config->yozm_consumer_key_secret)}" class="inputTypeText w400" />
-	</td>
-</tr>
-<tr>
-	<th scope="col"><div>{$lang->yozm_access_token}</div></th>
-	<td>
-		<input type="text" name="yozm_access_token" value="{htmlspecialchars($config->yozm_access_token)}" class="inputTypeText w400" />
-	</td>
-</tr>
-<tr>
-	<th scope="col"><div>{$lang->yozm_access_token_secret}</div></th>
-	<td>
-		<input type="text" name="yozm_access_token_secret" value="{htmlspecialchars($config->yozm_access_token_secret)}" class="inputTypeText w400" />
-		<p><span class="button"><input type="button" onclick="providerLogin('{getUrl('', 'module', 'socialxeserver', 'act', 'dispSocialxeserverAdminGetYozmAccessToken')}')" value="{$lang->get_yozm_access_token}" /></span></p>
-	</td>
-</tr>
-</table>
-
-<table cellspacing="0" class="rowTable">
-<tr>
-	<th scope="col" class="w200"><div>{$lang->bitly_username}</div></th>
-	<td>
-		<input type="text" name="bitly_username" value="{htmlspecialchars($config->bitly_username)}" class="inputTypeText w400" />
-	</td>
-</tr>
-<tr>
-	<th scope="col" class="w200"><div>{$lang->bitly_api_key}</div></th>
-	<td>
-		<input type="text" name="bitly_api_key" value="{htmlspecialchars($config->bitly_api_key)}" class="inputTypeText w400" />
-	</td>
-</tr>
-<tr class="row2">
-	<th colspan="2" class="button">
-		<span class="button black strong"><input type="submit" value="{$lang->cmd_registration}" accesskey="s" /></span>
-	</th>
-</tr>
-</table>
+<form class="x_form x_form-horizontal" action="./" method="get" onsubmit="return procFilter(this, insert_config)">
+	<div class="x_control-group">
+		<label class="x_control-label" for="twitter_consumer_key">{$lang->twitter_consumer_key}</label>
+		<div class="x_controls">
+			<input type="text" name="twitter_consumer_key" id="twitter_consumer_key" value="{htmlspecialchars($config->twitter_consumer_key)}" />
+			<p class="x_help-block">Callback: {getFullUrl('', 'module', 'socialxeserver', 'act', 'procSocialxeserverCallback', 'provider', 'twitter')}</p>
+		</div>
+	</div>
+	<div class="x_control-group">
+		<label class="x_control-label" for="twitter_consumer_key_secret">{$lang->twitter_consumer_key_secret}</label>
+		<div class="x_controls">
+			<input type="text" name="twitter_consumer_key_secret" id="twitter_consumer_key_secret" value="{htmlspecialchars($config->twitter_consumer_key_secret)}" />
+		</div>
+	</div>
+	<div class="x_control-group">
+		<label class="x_control-label" for="twitter_access_token">{$lang->twitter_access_token}</label>
+		<div class="x_controls">
+			<input type="text" name="twitter_access_token" id="twitter_access_token" value="{htmlspecialchars($config->twitter_access_token)}" />
+		</div>
+	</div>
+	<div class="x_control-group">
+		<label class="x_control-label" for="twitter_access_token_secret">{$lang->twitter_access_token_secret}</label>
+		<div class="x_controls">
+			<input type="text" name="twitter_access_token_secret" id="twitter_access_token_secret" value="{htmlspecialchars($config->twitter_access_token_secret)}" />
+		</div>
+	</div>
+	<div class="x_control-group">
+		<label class="x_control-label" for="me2day_application_key">{$lang->me2day_application_key}</label>
+		<div class="x_controls">
+			<input type="text" name="me2day_application_key" id="me2day_application_key" value="{htmlspecialchars($config->me2day_application_key)}" />
+		</div>
+	</div>
+	<div class="x_control-group">
+		<label class="x_control-label" for="me2day_user_id">{$lang->me2day_user_id}</label>
+		<div class="x_controls">
+			<input type="text" name="me2day_user_id" id="me2day_user_id" value="{htmlspecialchars($config->me2day_user_id)}" />
+		</div>
+	</div>
+	<div class="x_control-group">
+		<label class="x_control-label" for="me2day_api_key">{$lang->me2day_api_key}</label>
+		<div class="x_controls">
+			<input type="text" name="me2day_api_key" id="me2day_api_key" value="{htmlspecialchars($config->me2day_api_key)}" />
+		</div>
+	</div>
+	<div class="x_control-group">
+		<label class="x_control-label" for="facebook_app_id">{$lang->facebook_app_id}</label>
+		<div class="x_controls">
+			<input type="text" name="facebook_app_id" id="facebook_app_id" value="{htmlspecialchars($config->facebook_app_id)}" />
+		</div>
+	</div>
+	<div class="x_control-group">
+		<label class="x_control-label" for="facebook_app_secret">{$lang->facebook_app_secret}</label>
+		<div class="x_controls">
+			<input type="text" name="facebook_app_secret" id="facebook_app_secret" value="{htmlspecialchars($config->facebook_app_secret)}" />
+		</div>
+	</div>
+	<div class="x_control-group">
+		<label class="x_control-label" for="bitly_username">{$lang->bitly_username}</label>
+		<div class="x_controls">
+			<input type="text" name="bitly_username" id="bitly_username" value="{htmlspecialchars($config->bitly_username)}" />
+		</div>
+	</div>
+	<div class="x_control-group">
+		<label class="x_control-label" for="bitly_api_key">{$lang->bitly_api_key}</label>
+		<div class="x_controls">
+			<input type="text" name="bitly_api_key" id="bitly_api_key" value="{htmlspecialchars($config->bitly_api_key)}" />
+		</div>
+	</div>
+	<div class="btnArea">
+		<button type="submit" class="x_btn x_btn-primary">{$lang->cmd_registration}</button>
+	</div>
 </form>

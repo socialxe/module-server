@@ -26,8 +26,6 @@ class socialxeServerCommunicator {
 		$this->access[twitter]->oauth_token_secret = $config->twitter_access_token_secret;
 		$this->access[me2day]->user_id = $config->me2day_user_id;
 		$this->access[me2day]->user_key = $config->me2day_api_key;
-		$this->access[yozm]->oauth_token = $config->yozm_access_token;
-		$this->access[yozm]->oauth_token_secret = $config->yozm_access_token_secret;
 	}
 
 	// api 처리
