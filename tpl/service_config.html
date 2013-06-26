@@ -30,7 +30,7 @@
 		<div class="x_controls">
 			<select name="layout_srl" id="layout_srl">
 				<option value="0">{$lang->notuse}</option>
-				<option loop="$layout_list => $key, $val" value="{$val->layout_srl}" selected="selected"|cond="$service_module_info->layout_srl == $key->layout_srl">{$val->title} ({$val->layout})</option>
+				<option loop="$layout_list => $key, $val" value="{$val->layout_srl}" selected="selected"|cond="$service_module_info->layout_srl == $val->layout_srl">{$val->title} ({$val->layout})</option>
 			</select>
 			<p class="x_help-block">{$lang->about_layout}</p>
 		</div>
@@ -39,7 +39,7 @@
 		<label class="x_control-label" for="skin">{$lang->skin}</label>
 		<div class="x_controls">
 			<select name="skin" id="skin">
-				<option loop="$skin_list => $key, $val" value="{$key}" selected="selected"|cond="$service_module_info->skin==$key ||(!$module_info->skin && $key=='default')">{$val->title} ({$val->layout})</option>
+				<option loop="$skin_list => $key, $val" value="{$key}" selected="selected"|cond="$service_module_info->skin==$key ||(!$module_info->skin && $key=='default')">{$val->title}</option>
 			</select>
 			<p class="x_help-block">{$lang->about_layout}</p>
 		</div>
